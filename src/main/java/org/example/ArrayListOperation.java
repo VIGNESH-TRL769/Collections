@@ -60,11 +60,10 @@ public class ArrayListOperation
                     Log.info(print1);
                 }
                 case 7 -> {
-                    Log.info("-----Thank You-----");
-                    return;
+                    arrayList.clear();Log.info("ArrayList Cleared");
+
                 }
-                case 8->{arrayList.clear();Log.info("ArrayList Cleared");}
-                case 9->{return;}
+                case 8->{ Log.info("-----Thank You-----");return;}
                 default -> throw new IllegalStateException("Unexpected value: " + key);
             }
         }

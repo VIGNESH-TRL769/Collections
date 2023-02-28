@@ -4,14 +4,14 @@ import java.util.logging.Logger;
 public class Main
 {
     public static final Logger Log=Logger.getLogger(("InfoLogging"));
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         Scanner input=new Scanner(System.in);
 
         while(true)
         {
 
-            Log.info("\n1.LinkedListOperation\n2.Array\n3.ArrayListOperation\nEnter The Choice:");
+            Log.info("\n1.LinkedListOperation\n2.Array\n3.ArrayListOperation\n4.Exit\nEnter The Choice:");
             int key=input.nextInt();
             switch (key)
             {
