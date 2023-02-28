@@ -109,15 +109,13 @@ class ArrayOperation
     public void display()
     {
         StringBuilder print=new StringBuilder();
+        String print1;
         for(int i=0;i<size;i++)
         {
             print.append(" "+array[i]+" ");
         }
-        String print1=""+print;
+        print1=print.toString();
         Log.info(print1);
-        print.delete(0,print1.length());
-
-
     }
     public void sort()
     {

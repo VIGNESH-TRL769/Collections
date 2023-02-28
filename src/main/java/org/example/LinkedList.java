@@ -40,6 +40,7 @@ class LinkedList
     public void display()
     {
         StringBuilder print=new StringBuilder();
+        String print1;
         Node temp=this.head;
         if(temp==null)
         {
@@ -52,9 +53,8 @@ class LinkedList
                 print.append(" "+temp.data+" ");
                 temp=temp.next;
             }
-            String print1=""+print;
+            print1=print.toString();
             Log.info(print1);
-            print.delete(0,print1.length());
         }
     }
     public  void insertElement(int value,int position)

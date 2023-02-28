@@ -14,6 +14,7 @@ public class ArrayListOperation
             int key = input.nextInt();
             int index;
             int position;
+            String print1;
             String value;
             switch (key) {
                 case 1 -> {
@@ -55,9 +56,8 @@ public class ArrayListOperation
                     {
                         print.append(" "+o+" ");
                     }
-
-                    Log.info(print.toString());
-
+                    print1=print.toString();
+                    Log.info(print1);
                 }
                 case 7 -> {
                     Log.info("-----Thank You-----");
