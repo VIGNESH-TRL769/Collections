@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 public class ArrayListOperation
 {
     public static final Logger Log=Logger.getLogger(("InfoLogging"));
-    public static void main(String[] args)
+    public  void arraylistOperation()
     {
         ArrayList<String> arrayList = new ArrayList<>();
         Scanner input=new Scanner(System.in);
@@ -55,15 +55,16 @@ public class ArrayListOperation
                     {
                         print.append(" "+o+" ");
                     }
-                    String print1=""+print;
-                    Log.info(print1);
-                    print.delete(0,print1.length());
+
+                    Log.info(print.toString());
+
                 }
                 case 7 -> {
                     Log.info("-----Thank You-----");
                     return;
                 }
                 case 8->{arrayList.clear();Log.info("ArrayList Cleared");}
+                case 9->{return;}
                 default -> throw new IllegalStateException("Unexpected value: " + key);
             }
         }
